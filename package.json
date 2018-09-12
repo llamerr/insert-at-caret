@@ -1,5 +1,5 @@
 {
-  "name": "insert-at-caret",
+  "name": "insert-at-caret-native",
   "version": "1.0.0",
   "description": "Insert text in textarea at caret position.",
   "main": "index.js",
