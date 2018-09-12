@@ -17,6 +17,9 @@ function insertAtCaret(txtarea, text, addspace) {
     txtarea.selectionStart = strPos;
     txtarea.selectionEnd = strPos;
     txtarea.focus();
+
+    var event = new Event('keyup');
+    txtarea.dispatchEvent(event);
 }
 
 export default insertAtCaret;
