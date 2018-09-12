@@ -1,0 +1,19 @@
+{
+  "name": "insert-at-caret",
+  "version": "1.0.0",
+  "description": "Insert text in textarea at caret position.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llamerr/insert-at-caret.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llamerr/insert-at-caret/issues"
+  },
+  "homepage": "https://github.com/llamerr/insert-at-caret#readme"
+}
