@@ -1,4 +1,4 @@
-function insertAtCaret(txtarea, text) {
+function insertAtCaret(txtarea, text, addspace) {
     if (!txtarea) {
         return;
     }
@@ -6,9 +6,13 @@ function insertAtCaret(txtarea, text) {
     var front = txtarea.value.substring(0, txtarea.selectionStart);
     var back = txtarea.value.substring(txtarea.selectionEnd, txtarea.value.length);
 
+    if (addspace && front.length && !front.match(/\s$/)) {
+        text = ' ' + text;
+    }
+
     txtarea.value = front + text + back;
 
-    var strPos = (front + text).length - 1;
+    var strPos = (front + text).length;
 
     txtarea.selectionStart = strPos;
     txtarea.selectionEnd = strPos;
@@ -16,3 +20,4 @@ function insertAtCaret(txtarea, text) {
 }
 
 export default insertAtCaret;
+
